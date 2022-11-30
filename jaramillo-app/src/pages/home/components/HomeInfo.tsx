@@ -1,12 +1,14 @@
 export default function HomeInfo() {
   return (
-    <div className="home-content animation-info">
-      <h3 >Bienvenido a mi portafolio</h3>
-      <h1>Hola! Soy Cristóbal</h1>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-      doloremque nihil, ad consectetur a officia cum perferendis unde, possimus,
-      incidunt aliquid quo animi blanditiis cumque porro voluptatum deleniti
-      fugit illo.
+    <div className="home-content">
+      <h1 className="typing-special-title">Hola! Soy Cristóbal</h1>
+      <h3 className="typing-special-sub-title">Bienvenido a mi portafolio</h3>
+      <p className="p-info-home appear">
+        Ingeniero Civil en Computación, con motivación en la programación de
+        todo tipo (Software, lógica, Bases de datos, etc). Capacidad de aprender
+        de todo tipo de lenguajes de programación dependiendo del área en que se
+        desea trabajar.
+      </p>
     </div>
   );
 }

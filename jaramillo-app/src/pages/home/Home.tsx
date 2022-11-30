@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
+import Footer from "../components/Footer";
 import HomeInfo from "./components/HomeInfo";
 import ImageHome from "./components/ImageHome";
 import InfoMyHabilities from "./components/InfoMyHabilities.tsx";
@@ -33,32 +34,35 @@ export default function HomePage() {
   );
 
   return (
-    <section
-      id="content"
-      className="content-page"
-      onWheel={(e) => handleNavigation(e)}
-    >
-      <Navbar />
+    <div className="content-page">
+      <section id="content" onWheel={(e) => handleNavigation(e)}>
+        <Navbar />
 
-      <div className="container align-middle">
-        <div
-          className={
-            "row align-items-center " + (section === 0 ? "" : "section-hide")
-          }
-        >
-          <div className="col-sm-7 col-xs-12">
-            <HomeInfo />
+        <div className="container align-middle">
+          <div
+            className={
+              "row align-items-center " + (section === 0 ? "" : "section-hide")
+            }
+          >
+            <div className="col-sm-7 col-xs-12">
+              <HomeInfo />
+            </div>
+            <div className="col-sm-5 hidden-xs">
+              <ImageHome />
+            </div>
           </div>
-          <div className="col-sm-5 hidden-xs">
-            <ImageHome />
+          <div
+            className={
+              "info-habilities " + (section >= 1 ? "" : "section-hide")
+            }
+          >
+            <InfoMyHabilities section={section} />
           </div>
         </div>
-        <div
-          className={"info-habilities " + (section >= 1 ? "" : "section-hide")}
-        >
-          <InfoMyHabilities section={section} />
-        </div>
-      </div>
-    </section>
+      </section>
+      <footer>
+        <Footer />
+      </footer>
+    </div>
   );
 }
