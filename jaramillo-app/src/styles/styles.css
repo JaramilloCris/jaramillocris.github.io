@@ -1,0 +1,233 @@
+@font-face {
+  font-family: Centra;
+  src: url("../assets/font/CentraNo2-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: Centra;
+  src: url("../assets/font/CentraNo2-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Centra;
+  src: url("../assets/font/CentraNo2-Book.ttf");
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  color: #121212 !important;
+  font-family: "Centra", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+p,
+a,
+li,
+button,
+ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+@media (min-width: 1700px) {
+  main .container {
+    max-width: 100%;
+    padding: 0 150px;
+  }
+}
+
+p.success {
+  color: green;
+}
+
+p.danger {
+  color: red;
+}
+
+#content {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.home {
+  min-height: 226vh !important;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.content-page {
+  background: rgb(237, 249, 254);
+}
+
+.home-content {
+  position: relative;
+  top: 20vh;
+}
+
+.link-ref {
+  padding: 10px 10px;
+  margin: 10px 10px;
+  text-decoration: none;
+  color: rgb(0, 28, 85);
+}
+
+.icon-info {
+  padding: 10px 10px;
+  margin: 10px 10px;
+  text-decoration: none;
+  color: rgb(0, 28, 85);
+}
+
+.animation-info {
+  animation-duration: 1s;
+  animation-name: enter-view;
+  position: relative;
+}
+
+.animation-info-inverted {
+  animation-duration: 1s;
+  animation-name: enter-view-inverted;
+  position: relative;
+}
+
+@keyframes enter-view {
+  from {
+    right: 1000px;
+  }
+
+  to {
+    right: 0;
+  }
+}
+
+@keyframes enter-view-inverted {
+  from {
+    left: 1000px;
+  }
+
+  to {
+    left: 0;
+  }
+}
+.info-habilities {
+  position: relative;
+  top: 18vh;
+}
+
+.card-custom {
+  max-width: 100% !important;
+}
+
+.card-view {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+@media screen and (max-width: 768px) {
+  .card-view {
+    flex-direction: column !important;
+  }
+}
+
+.technology-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-habilities {
+  width: 300px;
+  height: 300px;
+}
+
+@media screen and (max-width: 768px) {
+  .image-habilities {
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.email-container {
+  max-width: 40%;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .email-container {
+    max-width: 100%;
+  }
+}
+
+.button-submit {
+  border-style: solid;
+  border-radius: 3px;
+  border-width: 1px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.right-display {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+
+.section-hide{
+  display: none;
+}
