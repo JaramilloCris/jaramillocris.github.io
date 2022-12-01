@@ -21,7 +21,7 @@ export default function HomePage() {
   const handleNavigation = useCallback(
     (e: any) => {
       const current: number = Date.now();
-      if (current - time > 1000) {
+      if (current - time > 2000) {
         if (e !== undefined && e.nativeEvent.wheelDelta > 0) {
           checkSection(section - 1);
         } else if (e !== undefined && e.nativeEvent.wheelDelta < 0) {

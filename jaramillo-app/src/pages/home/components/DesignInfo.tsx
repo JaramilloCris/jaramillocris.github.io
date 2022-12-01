@@ -1,13 +1,13 @@
-import pytorch from "../../../assets/img/pytorch.png";
-import python from "../../../assets/img/python.png";
+import figma from "../../../assets/img/figma.png";
+import balsamiq from "../../../assets/img/balsamiq.png"
 
 export default function DesignInfo() {
   return (
     <div>
-      <h1 className="mb-3">Data Science</h1>
+      <h1 className="mb-3">UI/UX Designer</h1>
       <div className="text-center">
-        <img className="m-2" style={{ width: 150, height: 40 }} src={pytorch} />
-        <img className="m-2" style={{ width: 50, height: 50 }} src={python} />
+        <img className="m-2" style={{ width: 60, height: 50 }} src={figma} />
+        <img className="m-2" style={{ width: 50, height: 50 }} src={balsamiq} />
       </div>
       <div className="mt-3">
       <p>

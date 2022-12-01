@@ -3,10 +3,9 @@ import FullStack from "./FullStack";
 import Desing from "./Design";
 
 export default function InfoMyHabilities(props: {section: number}) {
-  console.log(props.section)
   return (
     <div>
-      <h1 className="text-center mb-4">¿Que es lo que hago?</h1>
+      <h1 className="text-center appear-title mb-4">¿Que es lo que hago?</h1>
       <div className={"m-5 animation-info-inverted " + (props.section === 1 ? "" : "section-hide")}>
         <DataScience />
       </div>
