@@ -19,10 +19,8 @@ export default function FullStackInfo() {
       </div>
       <div className="mt-3">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio esse
-          autem ad ex dignissimos, a adipisci dolorum, deleniti officiis, quod
-          eligendi totam dicta distinctio quos blanditiis perferendis eius in
-          harum!
+          He desarrollado aplicaciones web tanto enfocado en el frontend como en
+          el backend. Experiencia con React, Angular y NextJS
         </p>
       </div>
     </div>

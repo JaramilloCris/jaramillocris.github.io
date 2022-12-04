@@ -12,9 +12,10 @@ export default function ExperienceCard(props: { experience: Experiences }) {
           {props.experience.date}
         </h6>
         <div className="text-center">
-          {props.experience.subImages.map((image: string) => {
+          {props.experience.subImages.map((image: string, index: number) => {
             return (
               <img
+                key={index}
                 className="m-2"
                 style={{ width: 40, height: 40 }}
                 src={require(`../../../assets/img/${image}`)}

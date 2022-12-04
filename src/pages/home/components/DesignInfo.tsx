@@ -1,5 +1,5 @@
 import figma from "../../../assets/img/figma.png";
-import balsamiq from "../../../assets/img/balsamiq.png"
+import balsamiq from "../../../assets/img/balsamiq.png";
 
 export default function DesignInfo() {
   return (
@@ -10,11 +10,11 @@ export default function DesignInfo() {
         <img className="m-2" style={{ width: 50, height: 50 }} src={balsamiq} />
       </div>
       <div className="mt-3">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio esse autem
-        ad ex dignissimos, a adipisci dolorum, deleniti officiis, quod eligendi
-        totam dicta distinctio quos blanditiis perferendis eius in harum!
-      </p>
+        <p>
+          He realizado trabajos de prototipado de aplicaciones y diseño de
+          interfaces con experiencias de usuarios. Utilizando herramientas como
+          figma.
+        </p>
       </div>
     </div>
   );

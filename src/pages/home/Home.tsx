@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 export default function HomePage() {
   const [section, setSection] = useState(0);
   const [time, setTime] = useState(0);
+  const [touchStart, setTouchStart] = useState(0);
 
   const checkSection = useCallback(
     (newSection: number) => {
@@ -25,6 +26,24 @@ export default function HomePage() {
         if (e !== undefined && e.nativeEvent.wheelDelta > 0) {
           checkSection(section - 1);
         } else if (e !== undefined && e.nativeEvent.wheelDelta < 0) {
+          checkSection(section + 1);
+        }
+        setTime(Date.now());
+      }
+    },
+    [section]
+  );
+
+  const handleNavigationMobile = useCallback(
+    (e: any) => {
+      const current: number = Date.now();
+      const touchEnd: number = e.changedTouches[0].clientY;
+      const diffTouch: number = touchEnd - touchStart;
+      console.log(diffTouch);
+      if (current - time > 2000) {
+        if (e !== undefined && diffTouch > 0) {
+          checkSection(section - 1);
+        } else if (e !== undefined && diffTouch < 0) {
           checkSection(section + 1);
         }
         setTime(Date.now());
@@ -52,6 +71,8 @@ export default function HomePage() {
             </div>
           </div>
           <div
+            onTouchStart={(e) => setTouchStart(e.touches[0].clientY)}
+            onTouchEnd={(e) => handleNavigationMobile(e)}
             className={
               "info-habilities " + (section >= 1 ? "" : "section-hide")
             }

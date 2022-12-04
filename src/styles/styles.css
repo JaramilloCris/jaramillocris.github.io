@@ -230,16 +230,25 @@ p.danger {
   .email-container {
     max-width: 100%;
   }
-  .text-navbar{
+  .text-navbar {
     display: none;
   }
-  .navbar{
+  .navbar {
     padding: 0 !important;
   }
-  .navbar-div{
+  .navbar-div {
     display: flex;
     align-items: center;
     margin-left: 0;
+  }
+  .info-habilities {
+    top: 0;
+  }
+  .typing-special-title {
+    font-size: 3vh;
+  }
+  .typing-special-sub-title {
+    font-size: 2vh;
   }
 }
 

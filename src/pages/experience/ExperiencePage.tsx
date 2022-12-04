@@ -15,9 +15,9 @@ export default function ExperiencePage() {
             <h1>Experiencias</h1>
           </div>
           <div className="row align-items-center">
-            {dataExperience.map((experience: Experiences) => {
+            {dataExperience.map((experience: Experiences, index: number) => {
               return (
-                <div className="col-sm-6 col-xs-12">
+                <div key={index} className="col-sm-6 col-xs-12">
                   <ExperienceCard experience={experience} />
                 </div>
               );

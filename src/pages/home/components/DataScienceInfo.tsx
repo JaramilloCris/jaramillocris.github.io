@@ -11,10 +11,8 @@ export default function DataScienceInfo() {
       </div>
       <div className="mt-3">
         <p className="text-justify">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio esse
-          autem ad ex dignissimos, a adipisci dolorum, deleniti officiis, quod
-          eligendi totam dicta distinctio quos blanditiis perferendis eius in
-          harum!
+          He realizado trabajos en analisis de datos junto a herramientas de
+          Machine learning y Deep learning
         </p>
       </div>
     </div>
