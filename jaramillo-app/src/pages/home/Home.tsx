@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 import Footer from "../components/Footer";
 import HomeInfo from "./components/HomeInfo";
 import ImageHome from "./components/ImageHome";

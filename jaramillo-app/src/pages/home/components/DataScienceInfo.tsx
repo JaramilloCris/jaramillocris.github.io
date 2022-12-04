@@ -10,7 +10,7 @@ export default function DataScienceInfo() {
         <img className="m-2" style={{ width: 50, height: 50 }} src={python} />
       </div>
       <div className="mt-3">
-        <p>
+        <p className="text-justify">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio esse
           autem ad ex dignissimos, a adipisci dolorum, deleniti officiis, quod
           eligendi totam dicta distinctio quos blanditiis perferendis eius in
