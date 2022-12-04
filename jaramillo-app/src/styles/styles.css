@@ -44,6 +44,15 @@ h6 {
   line-height: normal;
 }
 
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  background-color: black;
+  height: 1px;
+}
+
 p,
 a,
 li,
@@ -88,6 +97,10 @@ p.success {
 
 p.danger {
   color: red;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 #content {
@@ -217,6 +230,17 @@ p.danger {
   .email-container {
     max-width: 100%;
   }
+  .text-navbar{
+    display: none;
+  }
+  .navbar{
+    padding: 0 !important;
+  }
+  .navbar-div{
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+  }
 }
 
 .button-submit {
@@ -318,7 +342,7 @@ p.danger {
   animation-delay: 3s;
 }
 
-.appear-title{
+.appear-title {
   color: transparent;
   animation-name: appear;
   animation-duration: 1s;
@@ -347,4 +371,22 @@ p.danger {
   to {
     left: 0;
   }
+}
+
+.proyect-image {
+  width: 36vh;
+  height: 14vh;
+}
+
+.link-repository {
+  color: black;
+  border: 3px black solid;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 3px;
+}
+
+.link-repository:hover {
+  color: white;
+  background-color: black;
 }

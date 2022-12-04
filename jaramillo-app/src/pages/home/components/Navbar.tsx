@@ -3,23 +3,26 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
     <nav className="p-3 text-white navbar">
-      
-     
-      <div className="ml-auto">
+      <div className="ml-auto navbar-div">
         <Link className="link-ref" to="/">
-          Inicio
+          <i className="fa-solid fa-house"></i>
+          <span className="m-2 text-navbar">Inicio</span>
         </Link>
         <Link className="link-ref" to="/about">
-          Sobre mi
+          <i className="fa-solid fa-person"></i>
+          <span className="m-2 text-navbar">Sobre mi</span>
         </Link>
         <Link className="link-ref" to="/experience">
-          Experiencia
+          <i className="fa-solid fa-briefcase"></i>
+          <span className="m-2 text-navbar">Experiencia</span>
         </Link>
         <Link className="link-ref" to="/proyects">
-          Mis proyectos
+          <i className="fa-solid fa-laptop-code"></i>
+          <span className="m-2 text-navbar">Mis proyectos</span>
         </Link>
         <Link className="link-ref" to="/contact">
-          Contacto
+          <i className="fa-solid fa-envelope"></i>
+          <span className="m-2 text-navbar">Contacto</span>
         </Link>
       </div>
     </nav>
