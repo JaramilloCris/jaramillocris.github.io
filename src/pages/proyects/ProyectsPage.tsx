@@ -7,18 +7,17 @@ export default function ProyectsPage() {
   return (
     <div className="content-page">
       <section id="content">
-        <Navbar />
+        <Navbar section={3} />
         <div className="container align-middle mt-3">
           <div className="text-center mb-4">
             <h1>Mis proyectos</h1>
           </div>
           <div className="container align-middle">
             <ProyectMemes />
-            <ProyectParticipa />
           </div>
         </div>
       </section>
-      <footer>
+      <footer className="footer-custom">
         <Footer />
       </footer>
     </div>

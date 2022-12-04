@@ -6,7 +6,7 @@ export default function ContactPage() {
   return (
     <div className="content-page">
       <section id="content">
-        <Navbar />
+        <Navbar section={4} />
         <div className="container mt-3">
           <div className="text-center">
             <h1>Contacto</h1>
@@ -16,7 +16,7 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-      <footer>
+      <footer className="footer-custom">
         <Footer />
       </footer>
     </div>

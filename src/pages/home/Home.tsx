@@ -55,10 +55,12 @@ export default function HomePage() {
   return (
     <div className="content-page">
       <section id="content" onWheel={(e) => handleNavigation(e)}>
-        <Navbar />
+        <Navbar section={0} />
 
         <div className="container align-middle">
           <div
+            onTouchStart={(e) => setTouchStart(e.touches[0].clientY)}
+            onTouchEnd={(e) => handleNavigationMobile(e)}
             className={
               "row align-items-center " + (section === 0 ? "" : "section-hide")
             }
@@ -81,7 +83,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <footer>
+      <footer className="footer-custom">
         <Footer />
       </footer>
     </div>

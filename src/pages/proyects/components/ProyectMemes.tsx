@@ -2,7 +2,7 @@ export default function ProyectMemes() {
   return (
     <div className="container align-items-center mb-3">
       <div className="d-flex justify-content-center">
-        <div className="w-75">
+        <div>
           <h2>Clasificadores de memes con deep learning</h2>
           <h4 className="mt-2">
             Memoria para el titulo de Ingeniero civil en computación

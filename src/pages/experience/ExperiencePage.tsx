@@ -8,7 +8,7 @@ export default function ExperiencePage() {
   return (
     <div className="content-page">
       <section id="content">
-        <Navbar />
+        <Navbar section={2} />
 
         <div className="container align-middle mt-3">
           <div className="text-center">
@@ -25,7 +25,7 @@ export default function ExperiencePage() {
           </div>
         </div>
       </section>
-      <footer>
+      <footer className="footer-custom">
         <Footer />
       </footer>
     </div>

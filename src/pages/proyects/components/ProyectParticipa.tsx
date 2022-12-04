@@ -2,7 +2,7 @@ export default function ProyectParticipa() {
   return (
     <div className="container align-items-center mb-3">
       <div className="d-flex justify-content-center">
-        <div className="w-75">
+        <div>
           <h3>Psifos - Votación electronica</h3>
           <span>Proyecto de votación electronica de Participa Uchile</span>
           <p>
