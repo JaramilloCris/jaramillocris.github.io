@@ -1,10 +1,7 @@
 import Footer from "../components/Footer";
 import Navbar from "../home/components/Navbar";
-import ProyectCard from "./components/ProyectCard";
-import proyects from "./data";
-import Proyect from "./interfaces";
-
-const dataProyect: Array<Proyect> = proyects;
+import ProyectMemes from "./components/ProyectMemes";
+import ProyectParticipa from "./components/ProyectParticipa";
 
 export default function ProyectsPage() {
   return (
@@ -12,13 +9,12 @@ export default function ProyectsPage() {
       <section id="content">
         <Navbar />
         <div className="container align-middle mt-3">
-          <div className="text-center">
+          <div className="text-center mb-4">
             <h1>Mis proyectos</h1>
           </div>
-          <div className="container align-middle card-view">
-            {dataProyect.map((proyect: Proyect) => {
-              return <ProyectCard proyect={proyect} />;
-            })}
+          <div className="container align-middle">
+            <ProyectMemes />
+            <ProyectParticipa />
           </div>
         </div>
       </section>
